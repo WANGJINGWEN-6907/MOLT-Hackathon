@@ -1,0 +1,87 @@
+type AiProvider = "claude" | "openai";
+
+function readEnv(name: string): string {
+  const value = process.env[name];
+
+  if (!value) {
+    throw new Error(`缺少环境变量：${name}`);
+  }
+
+  return value;
+}
+
+function readOptionalEnv(name: string, fallback: string): string {
+  return process.env[name] || fallback;
+}
+
+function parseBoolean(value: string): boolean {
+  return value.toLowerCase() === "true";
+}
+
+function parseNumber(name: string, value: string): number {
+  const parsed = Number(value);
+
+  if (Number.isNaN(parsed)) {
+    throw new Error(`环境变量 ${name} 不是有效数字`);
+  }
+
+  return parsed;
+}
+
+function parseAiProvider(value: string): AiProvider {
+  if (value !== "claude" && value !== "openai") {
+    throw new Error("环境变量 AI_PROVIDER 只能是 claude 或 openai");
+  }
+
+  return value;
+}
+
+const aiProvider = parseAiProvider(readEnv("AI_PROVIDER"));
+
+const agentRankingConfig = {
+  topK: 3,
+  directionWeight: 0.4,
+  cityWeight: 0.2,
+  pressureWeight: 0.2,
+  trajectoryWeight: 0.2,
+} as const;
+
+export const config = {
+  app: {
+    env: readOptionalEnv("APP_ENV", "demo"),
+    name: readOptionalEnv("NEXT_PUBLIC_APP_NAME", "MOLT"),
+  },
+  ai: {
+    provider: aiProvider,
+    apiUrl: readEnv("AI_API_URL"),
+    apiKey: readEnv("AI_API_KEY"),
+    model: readEnv("AI_MODEL"),
+    timeoutMs: parseNumber(
+      "AI_TIMEOUT_MS",
+      readOptionalEnv("AI_TIMEOUT_MS", "8000"),
+    ),
+    maxRetries: parseNumber(
+      "AI_MAX_RETRIES",
+      readOptionalEnv("AI_MAX_RETRIES", "1"),
+    ),
+  },
+  agentRanking: agentRankingConfig,
+  database: {
+    url: readEnv("DATABASE_URL"),
+  },
+  redis: {
+    url: readEnv("REDIS_URL"),
+  },
+  demo: {
+    enabled: parseBoolean(readOptionalEnv("DEMO_MODE", "true")),
+    presetAccount: readOptionalEnv("DEMO_PRESET_ACCOUNT", "demo_user"),
+  },
+} as const;
+
+export function isClaudeProvider(): boolean {
+  return config.ai.provider === "claude";
+}
+
+export function isOpenAiProvider(): boolean {
+  return config.ai.provider === "openai";
+}

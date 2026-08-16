@@ -1,0 +1,178 @@
+[
+  {
+    "id": "snap_001",
+    "claim": "AI can now generate user stories and PRDs at 10x human speed, shifting PM value to judgment and stakeholder alignment",
+    "source": "McKinsey Global Institute",
+    "quote": "Product managers who master AI-augmented decision-making will see their strategic influence grow, while those focused purely on documentation face role compression.",
+    "year": 2024,
+    "affectedRole": "product manager"
+  },
+  {
+    "id": "snap_002",
+    "claim": "Natural language to SQL tools reduce time-to-insight by 70%, amplifying analyst capacity rather than replacing analysts",
+    "source": "Gartner",
+    "quote": "By 2026, 80% of data analyst tasks will be augmented by AI, but demand for analysts who can frame the right questions will increase by 25%.",
+    "year": 2024,
+    "affectedRole": "data analyst"
+  },
+  {
+    "id": "snap_003",
+    "claim": "AI design tools can generate 50+ UI variants in minutes, but lack the contextual empathy needed for truly human-centered design",
+    "source": "Stanford d.school",
+    "quote": "The designers who thrive will be those who use AI as a rapid prototyping partner while deepening their understanding of human behavioral nuance.",
+    "year": 2024,
+    "affectedRole": "UX designer"
+  },
+  {
+    "id": "snap_004",
+    "claim": "AI coding assistants boost developer productivity by 30-55%, but introduce new risks in code quality and security oversight",
+    "source": "MIT Technology Review",
+    "quote": "Software engineers are becoming orchestrators of AI-generated code rather than authors of every line, demanding stronger architectural thinking.",
+    "year": 2024,
+    "affectedRole": "software engineer"
+  },
+  {
+    "id": "snap_005",
+    "claim": "AI-driven process automation can handle 40% of operational workflows, reshaping operations roles toward exception handling and strategy",
+    "source": "McKinsey Global Institute",
+    "quote": "Operations managers who embrace AI see 35% efficiency gains, but the role increasingly demands cross-functional orchestration skills.",
+    "year": 2023,
+    "affectedRole": "operations manager"
+  },
+  {
+    "id": "snap_006",
+    "claim": "Generative AI produces 60% of first-draft marketing content at major brands, shifting strategists toward editorial judgment and brand voice",
+    "source": "HBR",
+    "quote": "Content strategists are evolving from creators to curators—their value lies in knowing what resonates, not in producing volume.",
+    "year": 2024,
+    "affectedRole": "content strategist"
+  },
+  {
+    "id": "snap_007",
+    "claim": "AI-powered campaign optimization reduces manual A/B testing cycles by 80%, but strategic positioning remains deeply human",
+    "source": "World Economic Forum",
+    "quote": "Marketing managers who can translate AI-generated insights into compelling brand narratives will command premium roles in the next decade.",
+    "year": 2024,
+    "affectedRole": "marketing manager"
+  },
+  {
+    "id": "snap_008",
+    "claim": "AI can automate 45% of business analysis tasks including requirements gathering and gap analysis, elevating the role to strategic advisory",
+    "source": "Gartner",
+    "quote": "Business analysts who pair domain expertise with AI fluency become indispensable translators between technology and business outcomes.",
+    "year": 2023,
+    "affectedRole": "business analyst"
+  },
+  {
+    "id": "snap_009",
+    "claim": "AI project management tools can auto-generate schedules, risk assessments, and status reports, but stakeholder navigation remains irreplaceable",
+    "source": "McKinsey Global Institute",
+    "quote": "The project manager of 2025 spends less time on Gantt charts and more time on alignment—a shift that rewards emotional intelligence over process mastery.",
+    "year": 2024,
+    "affectedRole": "project manager"
+  },
+  {
+    "id": "snap_010",
+    "claim": "AI chatbots now resolve 65% of customer queries at first contact, pushing CS managers toward relationship design and escalation strategy",
+    "source": "Gartner",
+    "quote": "Customer success is being redefined: the best CSMs build proactive retention systems where AI handles routine care and humans handle moments of truth.",
+    "year": 2024,
+    "affectedRole": "customer success manager"
+  },
+  {
+    "id": "snap_011",
+    "claim": "AI screening tools process 75% of initial candidate evaluations, shifting HR focus to culture-fit assessment and organizational design",
+    "source": "World Economic Forum",
+    "quote": "HR specialists who understand AI bias mitigation and can design equitable hiring pipelines will be among the most sought-after professionals.",
+    "year": 2024,
+    "affectedRole": "HR specialist"
+  },
+  {
+    "id": "snap_012",
+    "claim": "AI financial models can run scenario analyses 100x faster than traditional methods, redefining analyst value toward interpretation and communication",
+    "source": "McKinsey Global Institute",
+    "quote": "Financial analysts are no longer valued for building models—AI does that. They are valued for telling the story the numbers reveal.",
+    "year": 2023,
+    "affectedRole": "financial analyst"
+  },
+  {
+    "id": "snap_013",
+    "claim": "AI generates 90% of short-form ad copy at scale, but brand-consistent long-form storytelling remains a human stronghold",
+    "source": "HBR",
+    "quote": "The copywriter's craft is not dying—it's concentrating. The demand is shifting from volume production to voice architecture.",
+    "year": 2024,
+    "affectedRole": "copywriter"
+  },
+  {
+    "id": "snap_014",
+    "claim": "AI accelerates literature review and hypothesis generation by 5x, freeing researchers to focus on experimental design and insight synthesis",
+    "source": "Stanford HAI",
+    "quote": "Research scientists using AI tools publish 40% more papers, but the quality gap between AI-augmented and traditional research is widening.",
+    "year": 2024,
+    "affectedRole": "research scientist"
+  },
+  {
+    "id": "snap_015",
+    "claim": "AI demo environments and automated POC generation reduce pre-sales cycles by 50%, shifting sales engineers toward consultative selling",
+    "source": "Gartner",
+    "quote": "Sales engineers who can blend technical depth with business storytelling see 2x higher close rates in AI-augmented selling environments.",
+    "year": 2023,
+    "affectedRole": "sales engineer"
+  },
+  {
+    "id": "snap_016",
+    "claim": "AI-powered CRM systems predict churn with 85% accuracy, transforming account management from reactive service to proactive growth strategy",
+    "source": "McKinsey Global Institute",
+    "quote": "Account managers are becoming growth architects—AI tells them who is at risk, but only humans can design the intervention that retains trust.",
+    "year": 2024,
+    "affectedRole": "account manager"
+  },
+  {
+    "id": "snap_017",
+    "claim": "AI testing tools can generate 70% of test cases automatically, but edge case discovery and quality philosophy still require human judgment",
+    "source": "MIT Technology Review",
+    "quote": "QA engineers who shift from manual testing to AI-augmented quality strategy see their organizational influence grow significantly.",
+    "year": 2024,
+    "affectedRole": "QA engineer"
+  },
+  {
+    "id": "snap_018",
+    "claim": "AI can draft 80% of technical documentation from code analysis, but clarity of explanation and user empathy remain distinctly human skills",
+    "source": "World Economic Forum",
+    "quote": "Technical writers are evolving into information architects who design how humans learn from machines—a role AI cannot self-serve.",
+    "year": 2023,
+    "affectedRole": "technical writer"
+  },
+  {
+    "id": "snap_019",
+    "claim": "AI growth tools can run 200+ experiments simultaneously, but identifying which metrics actually matter requires strategic intuition",
+    "source": "HBR",
+    "quote": "Growth hackers who understand both the mechanics of AI-driven experimentation and the psychology of user behavior are redefining the role.",
+    "year": 2024,
+    "affectedRole": "growth hacker"
+  },
+  {
+    "id": "snap_020",
+    "claim": "AI strategy tools can analyze market landscapes in hours instead of weeks, but synthesizing insights into actionable strategy remains human work",
+    "source": "McKinsey Global Institute",
+    "quote": "Strategy consultants who leverage AI for analysis while deepening client relationship skills will dominate the next wave of advisory.",
+    "year": 2024,
+    "affectedRole": "strategy consultant"
+  },
+  {
+    "id": "snap_021",
+    "claim": "AI design systems can generate component libraries and design tokens automatically, elevating product designers to system-level thinking",
+    "source": "Stanford d.school",
+    "quote": "Product designers who think in systems rather than screens—orchestrating AI-generated components into coherent experiences—are becoming design leaders.",
+    "year": 2024,
+    "affectedRole": "product designer"
+  },
+  {
+    "id": "snap_022",
+    "claim": "AI automates 60% of data pipeline construction and maintenance, shifting data engineers toward architecture design and data governance",
+    "source": "Gartner",
+    "quote": "Data engineers who master AI-native architectures and real-time processing will be the backbone of every data-driven organization.",
+    "year": 2024,
+    "affectedRole": "data engineer"
+  }
+]
