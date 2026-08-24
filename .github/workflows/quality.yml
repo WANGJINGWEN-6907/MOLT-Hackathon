@@ -32,8 +32,11 @@ jobs:
           node-version: 20
           cache: pnpm
 
-      - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
+      - name: Move stale lockfile out of the workspace
+        run: mv pnpm-lock.yaml /tmp/pnpm-lock.stale.yaml
+
+      - name: Install dependencies and regenerate lockfile
+        run: pnpm install --no-frozen-lockfile --registry=https://registry.npmjs.org/
 
       - name: Preserve regenerated lockfile
         uses: actions/upload-artifact@v4
