@@ -1,5 +1,7 @@
 # MOLT
 
+[![Quality checks](https://github.com/wjw-6907/MOLT-Hackathon/actions/workflows/quality.yml/badge.svg)](https://github.com/wjw-6907/MOLT-Hackathon/actions/workflows/quality.yml)
+
 **AI 时代身份过渡期叙事引擎。** 通过三条路径引导用户回答问题，生成结构化的 AI 镜像摘要与结果分析，并可公开建档展示在力导向地图上。
 
 ---
@@ -42,9 +44,7 @@ cp .env.example .env
 # 编辑 .env，填入 VITE_LLM_API_KEY 等（见下方说明）
 
 # 3. 启动开发服务器
-npm start
-# 或
-pnpm dev
+pnpm start
 ```
 
 启动后访问 `http://localhost:5173`
@@ -86,11 +86,11 @@ src/
 ## 开发命令
 
 ```bash
-npm start          # 启动开发服务器
-npm test           # 运行单元测试（Vitest）
-npm run typecheck  # TypeScript 类型检查
-npm run lint       # 完整检查链路（typecheck + biome）
-npm run build      # 构建生产产物
+pnpm start         # 启动开发服务器
+pnpm test          # 运行单元测试（Vitest）
+pnpm typecheck     # TypeScript 类型检查
+pnpm lint          # 完整检查链路（类型、Biome、规则与生产构建检查）
+pnpm e2e           # 运行端到端检查
 ```
 
 ---
